@@ -69,9 +69,12 @@
         <div class="form-group">
             <label for="report" class="form-label">Report To:</label>
             <select id="report" name="report" class="form-select">
-                <option value="1">Male</option>
-                <option value="2">Female</option>
-                <option value="3">Other</option>
+                <?php
+                $reporters = ["Bao Do", "Cao Hoang", "Quoc Huy"];
+                foreach ($reporters as $reporter){
+                    echo "<option value='$reporter'>$reporter</option>";
+                }
+                ?>
             </select>
         </div>
 
@@ -108,11 +111,14 @@
         </div>
 
         <div class="form-group">
-            <label for="gender" class="form-label">Gender:</label>
-            <select id="gender" name="gender" class="form-select">
-                <option value="VN">Male</option>
-                <option value="USA">Female</option>
-                <option value="CAN">Other</option>
+            <label for="country" class="form-label">Country:</label>
+            <select id="country" name="country" class="form-select">
+                <?php
+                $countries = ["VN", "USA", "CAN", "FRA"];
+                foreach ($countries as $country){
+                    echo "<option value = '$country'>$country</option>";
+                }
+                ?>
             </select>
         </div>
 
