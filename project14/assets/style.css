@@ -55,6 +55,6 @@ body {
 }
 
 .form-label {
-    width: 120px; /* Thiết lập độ rộng cố định cho nhãn */
+    width: 200px; /* Thiết lập độ rộng cố định cho nhãn */
     margin-right: 10px; /* Thêm khoảng cách giữa nhãn và trường nhập */
 }
